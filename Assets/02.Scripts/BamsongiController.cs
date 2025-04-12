@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class BamsongiController : MonoBehaviour
 {
-    void Start()
+    void Update()
     {
-        Shoot(new Vector3(0, 200, 2000));
+        if (transform.position.y <= 1)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void Shoot(Vector3 dir)
