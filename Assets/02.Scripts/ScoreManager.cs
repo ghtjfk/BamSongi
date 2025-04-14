@@ -12,6 +12,6 @@ public class ScoreManager : MonoBehaviour
     public void Plus_Score(int score)
     {
         this.score += score;
-        score_Text.text = this.score.ToString();
+        score_Text.text = "Score: " + this.score.ToString();
     } 
 }
